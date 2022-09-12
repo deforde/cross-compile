@@ -44,7 +44,7 @@ make -C $MKFILE_DIR -f $MKFILE
 export AR="clang ar"
 # export CC="zig cc -target aarch64-macos"
 # export CXX="zig c++ -target aarch64-macos"
-export CC="clang -target aarch64-apple-macos-macho --sysroot /home/MacOSX11.3.sdk -fuse-ld=lld"
-export CXX="clang++ -target aarch64-apple-macos-macho --sysroot /home/MacOSX11.3.sdk -fuse-ld=lld"
+export CC="clang -target aarch64-apple-macos-macho --sysroot /home/macos-sdk -fuse-ld=lld"
+export CXX="clang++ -target aarch64-apple-macos-macho --sysroot /home/macos-sdk -fuse-ld=lld"
 make -C $MKFILE_DIR -f $MKFILE
 
